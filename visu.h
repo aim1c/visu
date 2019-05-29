@@ -6,7 +6,7 @@
 /*   By: fsnow-be <fsnow-be@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/30 23:24:07 by fsnow-be          #+#    #+#             */
-/*   Updated: 2019/02/12 01:30:27 by fsnow-be         ###   ########.fr       */
+/*   Updated: 2019/05/30 00:31:33 by aim1c            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,32 +15,52 @@
 
 # include "libft/libft/libft.h"
 # include "mlx/mlx.h"
+# include <SDL2/SDL.h>
 
-typedef struct	s_image
+# define WI 1280
+# define HI 720
+
+/*
+** -------------------------- Struct with SDL2 structs -------------------------
+ * ------------win		-> main window
+ * ------------renderer	-> backgrond and reload images
+ * ------------e		-> struct with events
+*/
+
+typedef struct		s_sdl
 {
-	void 		*img_ptr;
-	char		*ln;
-	int			*lni;
-	int			bits;
-	int			endian;
-	int			x_lin;
-	int			y_lin;
-}				t_img;
+	SDL_Window		*win;
+	SDL_Renderer	*renderer;
+	SDL_Event		e;
+}					t_sdl;
 
-typedef struct	s_data
+/*
+** -------------------------- Save data, from lem_in ---------------------------
+*/
+
+typedef struct		s_data
 {
-	t_list		*data;
-	t_list		*data_head;
-}				t_data;
+	t_list			*data;
+	t_list			*data_head;
+}					t_data;
 
-typedef struct	s_mlx
+/*
+** -------------------------- Main struct --------------------------------------
+*/
+
+typedef struct		s_mlx
 {
-	void		*mlx;
-	void		*win;
-	t_img		*img;
-	t_data		*dat;
-	int			x_lin;
-	int			y_lin;
-}				t_mlx;
+	t_sdl			*sdl;
+	t_data			*dat;
+}					t_mlx;
 
+t_mlx				*init_all(void);
+void				exit_warn(char *ln);
+void				get_lst_data(t_data **d);
+
+/*
+** -------------------------- SDL ----------------------------------------------
+*/
+void				sdl_to_null(t_sdl **s);
+void				init_create(t_sdl **s);
 #endif

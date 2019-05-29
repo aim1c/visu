@@ -98,6 +98,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/visu.dir/libft/libft/write.c.o"
   "CMakeFiles/visu.dir/libft/libft/xprint.c.o"
   "CMakeFiles/visu.dir/main.c.o"
+  "CMakeFiles/visu.dir/data.c.o"
+  "CMakeFiles/visu.dir/init_sdl.c.o"
   "../run/visu.pdb"
   "../run/visu"
 )

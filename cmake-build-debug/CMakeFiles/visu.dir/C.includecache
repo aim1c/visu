@@ -6,15 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/fsnow-be/CLionProjects/visu/libft/libft/ft_printf.h
+/Users/aleksandr/Documents/21/visu/data.c
+visu.h
+/Users/aleksandr/Documents/21/visu/visu.h
+
+/Users/aleksandr/Documents/21/visu/init_sdl.c
+visu.h
+/Users/aleksandr/Documents/21/visu/visu.h
+
+/Users/aleksandr/Documents/21/visu/libft/libft/ft_printf.h
 libft.h
-/Users/fsnow-be/CLionProjects/visu/libft/libft/libft.h
+/Users/aleksandr/Documents/21/visu/libft/libft/libft.h
 stdarg.h
 -
 stdint.h
 -
 
-/Users/fsnow-be/CLionProjects/visu/libft/libft/libft.h
+/Users/aleksandr/Documents/21/visu/libft/libft/libft.h
 string.h
 -
 unistd.h
@@ -24,17 +32,19 @@ stdlib.h
 fcntl.h
 -
 ft_printf.h
-/Users/fsnow-be/CLionProjects/visu/libft/libft/ft_printf.h
+/Users/aleksandr/Documents/21/visu/libft/libft/ft_printf.h
 
-/Users/fsnow-be/CLionProjects/visu/main.c
+/Users/aleksandr/Documents/21/visu/main.c
 visu.h
-/Users/fsnow-be/CLionProjects/visu/visu.h
+/Users/aleksandr/Documents/21/visu/visu.h
 
-/Users/fsnow-be/CLionProjects/visu/mlx/mlx.h
+/Users/aleksandr/Documents/21/visu/mlx/mlx.h
 
-/Users/fsnow-be/CLionProjects/visu/visu.h
+/Users/aleksandr/Documents/21/visu/visu.h
 libft/libft/libft.h
-/Users/fsnow-be/CLionProjects/visu/libft/libft/libft.h
+/Users/aleksandr/Documents/21/visu/libft/libft/libft.h
 mlx/mlx.h
-/Users/fsnow-be/CLionProjects/visu/mlx/mlx.h
+/Users/aleksandr/Documents/21/visu/mlx/mlx.h
+SDL2/SDL.h
+-
 

@@ -6,72 +6,47 @@
 /*   By: fsnow-be <fsnow-be@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/30 23:24:07 by fsnow-be          #+#    #+#             */
-/*   Updated: 2019/02/12 01:30:27 by fsnow-be         ###   ########.fr       */
+/*   Updated: 2019/05/30 00:33:23 by aim1c            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "visu.h"
 
-t_mlx	*init_all(void)
+void	render(t_sdl **s)
 {
-	t_mlx	*m;
-
-	m = (t_mlx *)malloc(sizeof(t_mlx) + 1);
-	m->dat = (t_data *)malloc(sizeof(t_data) + 1);
-	m->img = (t_img *)malloc(sizeof(t_img) + 1);
-	return (m);
+	SDL_RenderClear((*s)->renderer);
+	SDL_RenderPresent((*s)->renderer);
 }
-
-void	exit_warn(char *ln)
+void 	break_game_while(int *f, t_sdl **s)
 {
-	ft_printf(ln);
-	exit(EXIT_SUCCESS);
-}
-
-int		key_hook(int c, t_mlx *m)
-{
-	if (c == 53)
-		exit_warn("esc");
-	return (0);
-}
-
-void	get_lst_data(t_data **d)
-{
-	char	*ln;
-
-	(*d)->data = NULL;
-	(*d)->data_head = NULL;
-	while (ft_gnl(0, &ln) > 0)
+	while (SDL_PollEvent(&(*s)->e) != 0)
 	{
-		if ((*d)->data_head == 0)
-		{
-			(*d)->data_head = ft_lstnew(ln, ft_strlen(ln) + 1);
-			(*d)->data = (*d)->data_head;
-		}
-		else
-		{
-			(*d)->data->next = ft_lstnew(ln, ft_strlen(ln) + 1);
-			(*d)->data = (*d)->data->next;
-		}
+		if ((*s)->e.type == SDL_QUIT)
+			*f = TRUE;
 	}
 }
 
-void	render(t_mlx *m)
+int		close_sdl(t_mlx *m)
 {
-
+	SDL_DestroyWindow(m->sdl->win);
+	SDL_DestroyRenderer(m->sdl->renderer);
+	SDL_Quit();
 }
 
 int		main()
 {
 	t_mlx	*m;
-
+	int		f = FALSE;
 	if ((m = init_all()) == NULL)
 		exit_warn("()");
-	m->mlx = mlx_init();
-	m->win = mlx_new_window(m->mlx, 1000, 1000, "visu");
 	get_lst_data(&m->dat);
-	render(m);
-	mlx_key_hook(m->win, key_hook, m);
-	mlx_loop(m->mlx);
+	SDL_Init(SDL_INIT_VIDEO);
+	init_create(&m->sdl);
+	while (!f)
+	{
+		render(&m->sdl);
+		break_game_while(&f, &m->sdl);
+	}
+	close_sdl(m);
 	return 0;
 }
