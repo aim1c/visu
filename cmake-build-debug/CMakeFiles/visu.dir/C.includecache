@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/fsnow-be/CLionProjects/visu/libft/libft/ft_printf.h
+libft.h
+/Users/fsnow-be/CLionProjects/visu/libft/libft/libft.h
+stdarg.h
+-
+stdint.h
+-
+
+/Users/fsnow-be/CLionProjects/visu/libft/libft/libft.h
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+fcntl.h
+-
+ft_printf.h
+/Users/fsnow-be/CLionProjects/visu/libft/libft/ft_printf.h
+
+/Users/fsnow-be/CLionProjects/visu/main.c
+visu.h
+/Users/fsnow-be/CLionProjects/visu/visu.h
+
+/Users/fsnow-be/CLionProjects/visu/mlx/mlx.h
+
+/Users/fsnow-be/CLionProjects/visu/visu.h
+libft/libft/libft.h
+/Users/fsnow-be/CLionProjects/visu/libft/libft/libft.h
+mlx/mlx.h
+/Users/fsnow-be/CLionProjects/visu/mlx/mlx.h
+
