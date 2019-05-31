@@ -1331,44 +1331,57 @@ CMakeFiles/visu.dir/libft/libft/xprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visu.dir/libft/libft/xprint.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aleksandr/Documents/21/visu/libft/libft/xprint.c -o CMakeFiles/visu.dir/libft/libft/xprint.c.s
 
-CMakeFiles/visu.dir/main.c.o: CMakeFiles/visu.dir/flags.make
-CMakeFiles/visu.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/visu.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visu.dir/main.c.o   -c /Users/aleksandr/Documents/21/visu/main.c
+CMakeFiles/visu.dir/source/data.c.o: CMakeFiles/visu.dir/flags.make
+CMakeFiles/visu.dir/source/data.c.o: ../source/data.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/visu.dir/source/data.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visu.dir/source/data.c.o   -c /Users/aleksandr/Documents/21/visu/source/data.c
 
-CMakeFiles/visu.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visu.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aleksandr/Documents/21/visu/main.c > CMakeFiles/visu.dir/main.c.i
+CMakeFiles/visu.dir/source/data.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visu.dir/source/data.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aleksandr/Documents/21/visu/source/data.c > CMakeFiles/visu.dir/source/data.c.i
 
-CMakeFiles/visu.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visu.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aleksandr/Documents/21/visu/main.c -o CMakeFiles/visu.dir/main.c.s
+CMakeFiles/visu.dir/source/data.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visu.dir/source/data.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aleksandr/Documents/21/visu/source/data.c -o CMakeFiles/visu.dir/source/data.c.s
 
-CMakeFiles/visu.dir/data.c.o: CMakeFiles/visu.dir/flags.make
-CMakeFiles/visu.dir/data.c.o: ../data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/visu.dir/data.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visu.dir/data.c.o   -c /Users/aleksandr/Documents/21/visu/data.c
+CMakeFiles/visu.dir/source/init_sdl.c.o: CMakeFiles/visu.dir/flags.make
+CMakeFiles/visu.dir/source/init_sdl.c.o: ../source/init_sdl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/visu.dir/source/init_sdl.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visu.dir/source/init_sdl.c.o   -c /Users/aleksandr/Documents/21/visu/source/init_sdl.c
 
-CMakeFiles/visu.dir/data.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visu.dir/data.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aleksandr/Documents/21/visu/data.c > CMakeFiles/visu.dir/data.c.i
+CMakeFiles/visu.dir/source/init_sdl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visu.dir/source/init_sdl.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aleksandr/Documents/21/visu/source/init_sdl.c > CMakeFiles/visu.dir/source/init_sdl.c.i
 
-CMakeFiles/visu.dir/data.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visu.dir/data.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aleksandr/Documents/21/visu/data.c -o CMakeFiles/visu.dir/data.c.s
+CMakeFiles/visu.dir/source/init_sdl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visu.dir/source/init_sdl.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aleksandr/Documents/21/visu/source/init_sdl.c -o CMakeFiles/visu.dir/source/init_sdl.c.s
 
-CMakeFiles/visu.dir/init_sdl.c.o: CMakeFiles/visu.dir/flags.make
-CMakeFiles/visu.dir/init_sdl.c.o: ../init_sdl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/visu.dir/init_sdl.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visu.dir/init_sdl.c.o   -c /Users/aleksandr/Documents/21/visu/init_sdl.c
+CMakeFiles/visu.dir/source/main.c.o: CMakeFiles/visu.dir/flags.make
+CMakeFiles/visu.dir/source/main.c.o: ../source/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/visu.dir/source/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visu.dir/source/main.c.o   -c /Users/aleksandr/Documents/21/visu/source/main.c
 
-CMakeFiles/visu.dir/init_sdl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visu.dir/init_sdl.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aleksandr/Documents/21/visu/init_sdl.c > CMakeFiles/visu.dir/init_sdl.c.i
+CMakeFiles/visu.dir/source/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visu.dir/source/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aleksandr/Documents/21/visu/source/main.c > CMakeFiles/visu.dir/source/main.c.i
 
-CMakeFiles/visu.dir/init_sdl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visu.dir/init_sdl.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aleksandr/Documents/21/visu/init_sdl.c -o CMakeFiles/visu.dir/init_sdl.c.s
+CMakeFiles/visu.dir/source/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visu.dir/source/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aleksandr/Documents/21/visu/source/main.c -o CMakeFiles/visu.dir/source/main.c.s
+
+CMakeFiles/visu.dir/source/main_info_block.c.o: CMakeFiles/visu.dir/flags.make
+CMakeFiles/visu.dir/source/main_info_block.c.o: ../source/main_info_block.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/visu.dir/source/main_info_block.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visu.dir/source/main_info_block.c.o   -c /Users/aleksandr/Documents/21/visu/source/main_info_block.c
+
+CMakeFiles/visu.dir/source/main_info_block.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visu.dir/source/main_info_block.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aleksandr/Documents/21/visu/source/main_info_block.c > CMakeFiles/visu.dir/source/main_info_block.c.i
+
+CMakeFiles/visu.dir/source/main_info_block.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visu.dir/source/main_info_block.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aleksandr/Documents/21/visu/source/main_info_block.c -o CMakeFiles/visu.dir/source/main_info_block.c.s
 
 # Object files for target visu
 visu_OBJECTS = \
@@ -1470,9 +1483,10 @@ visu_OBJECTS = \
 "CMakeFiles/visu.dir/libft/libft/uprint.c.o" \
 "CMakeFiles/visu.dir/libft/libft/write.c.o" \
 "CMakeFiles/visu.dir/libft/libft/xprint.c.o" \
-"CMakeFiles/visu.dir/main.c.o" \
-"CMakeFiles/visu.dir/data.c.o" \
-"CMakeFiles/visu.dir/init_sdl.c.o"
+"CMakeFiles/visu.dir/source/data.c.o" \
+"CMakeFiles/visu.dir/source/init_sdl.c.o" \
+"CMakeFiles/visu.dir/source/main.c.o" \
+"CMakeFiles/visu.dir/source/main_info_block.c.o"
 
 # External object files for target visu
 visu_EXTERNAL_OBJECTS =
@@ -1575,13 +1589,14 @@ visu_EXTERNAL_OBJECTS =
 ../run/visu: CMakeFiles/visu.dir/libft/libft/uprint.c.o
 ../run/visu: CMakeFiles/visu.dir/libft/libft/write.c.o
 ../run/visu: CMakeFiles/visu.dir/libft/libft/xprint.c.o
-../run/visu: CMakeFiles/visu.dir/main.c.o
-../run/visu: CMakeFiles/visu.dir/data.c.o
-../run/visu: CMakeFiles/visu.dir/init_sdl.c.o
+../run/visu: CMakeFiles/visu.dir/source/data.c.o
+../run/visu: CMakeFiles/visu.dir/source/init_sdl.c.o
+../run/visu: CMakeFiles/visu.dir/source/main.c.o
+../run/visu: CMakeFiles/visu.dir/source/main_info_block.c.o
 ../run/visu: CMakeFiles/visu.dir/build.make
-../run/visu: ../mlx/libmlx.a
+../run/visu: /usr/local/lib/libSDL2_ttf.dylib
 ../run/visu: CMakeFiles/visu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Linking C executable ../run/visu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Linking C executable ../run/visu"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/visu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

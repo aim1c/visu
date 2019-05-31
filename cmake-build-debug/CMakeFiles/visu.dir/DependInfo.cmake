@@ -4,8 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/aleksandr/Documents/21/visu/data.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/data.c.o"
-  "/Users/aleksandr/Documents/21/visu/init_sdl.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/init_sdl.c.o"
   "/Users/aleksandr/Documents/21/visu/libft/libft/ccprint.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/libft/libft/ccprint.c.o"
   "/Users/aleksandr/Documents/21/visu/libft/libft/check.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/libft/libft/check.c.o"
   "/Users/aleksandr/Documents/21/visu/libft/libft/color.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/libft/libft/color.c.o"
@@ -104,7 +102,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/aleksandr/Documents/21/visu/libft/libft/uprint.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/libft/libft/uprint.c.o"
   "/Users/aleksandr/Documents/21/visu/libft/libft/write.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/libft/libft/write.c.o"
   "/Users/aleksandr/Documents/21/visu/libft/libft/xprint.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/libft/libft/xprint.c.o"
-  "/Users/aleksandr/Documents/21/visu/main.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/main.c.o"
+  "/Users/aleksandr/Documents/21/visu/source/data.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/source/data.c.o"
+  "/Users/aleksandr/Documents/21/visu/source/init_sdl.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/source/init_sdl.c.o"
+  "/Users/aleksandr/Documents/21/visu/source/main.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/source/main.c.o"
+  "/Users/aleksandr/Documents/21/visu/source/main_info_block.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/source/main_info_block.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
@@ -112,6 +113,7 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././libft/libft"
   "/usr/local/Cellar/sdl2/2.0.9_1/include/SDL2"
+  "/usr/local/include/SDL2"
   )
 
 # Targets to which this target links.

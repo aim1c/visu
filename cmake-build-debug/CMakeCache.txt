@@ -200,8 +200,29 @@ OPEN_GL:FILEPATH=/System/Library/Frameworks/OpenGl.framework
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
+//The directory containing a CMake configuration file for SDL2TTF.
+SDL2TTF_DIR:PATH=SDL2TTF_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2
+
+//Path to a file.
+SDL2_TTF_INCLUDE_DIR:PATH=/usr/local/include/SDL2
+
+//Path to a library.
+SDL2_TTF_LIBRARY:FILEPATH=/usr/local/lib/libSDL2_ttf.dylib
+
+//The directory containing a CMake configuration file for SDL2_ttf.
+SDL2_ttf_DIR:PATH=SDL2_ttf_DIR-NOTFOUND
+
+//Path to a library.
+SDL_TTF:FILEPATH=SDL_TTF-NOTFOUND
+
+//Path to a file.
+SDL_TTF_INCLUDE_DIR:PATH=SDL_TTF_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+SDL_TTF_LIBRARY:FILEPATH=SDL_TTF_LIBRARY-NOTFOUND
 
 //Value Computed by CMake
 visu_BINARY_DIR:STATIC=/Users/aleksandr/Documents/21/visu/cmake-build-debug
@@ -335,6 +356,12 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding SDL2_ttf
+FIND_PACKAGE_MESSAGE_DETAILS_SDL2_ttf:INTERNAL=[/usr/local/lib/libSDL2_ttf.dylib][/usr/local/include/SDL2][v2.0.15()]
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL_TTF_INCLUDE_DIR
+SDL_TTF_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL_TTF_LIBRARY
+SDL_TTF_LIBRARY-ADVANCED:INTERNAL=1
 

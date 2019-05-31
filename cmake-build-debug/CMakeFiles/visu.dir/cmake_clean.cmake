@@ -97,9 +97,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/visu.dir/libft/libft/uprint.c.o"
   "CMakeFiles/visu.dir/libft/libft/write.c.o"
   "CMakeFiles/visu.dir/libft/libft/xprint.c.o"
-  "CMakeFiles/visu.dir/main.c.o"
-  "CMakeFiles/visu.dir/data.c.o"
-  "CMakeFiles/visu.dir/init_sdl.c.o"
+  "CMakeFiles/visu.dir/source/data.c.o"
+  "CMakeFiles/visu.dir/source/init_sdl.c.o"
+  "CMakeFiles/visu.dir/source/main.c.o"
+  "CMakeFiles/visu.dir/source/main_info_block.c.o"
   "../run/visu.pdb"
   "../run/visu"
 )

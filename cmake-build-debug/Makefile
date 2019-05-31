@@ -123,60 +123,6 @@ visu/fast:
 	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/build
 .PHONY : visu/fast
 
-data.o: data.c.o
-
-.PHONY : data.o
-
-# target to build an object file
-data.c.o:
-	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/data.c.o
-.PHONY : data.c.o
-
-data.i: data.c.i
-
-.PHONY : data.i
-
-# target to preprocess a source file
-data.c.i:
-	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/data.c.i
-.PHONY : data.c.i
-
-data.s: data.c.s
-
-.PHONY : data.s
-
-# target to generate assembly for a file
-data.c.s:
-	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/data.c.s
-.PHONY : data.c.s
-
-init_sdl.o: init_sdl.c.o
-
-.PHONY : init_sdl.o
-
-# target to build an object file
-init_sdl.c.o:
-	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/init_sdl.c.o
-.PHONY : init_sdl.c.o
-
-init_sdl.i: init_sdl.c.i
-
-.PHONY : init_sdl.i
-
-# target to preprocess a source file
-init_sdl.c.i:
-	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/init_sdl.c.i
-.PHONY : init_sdl.c.i
-
-init_sdl.s: init_sdl.c.s
-
-.PHONY : init_sdl.s
-
-# target to generate assembly for a file
-init_sdl.c.s:
-	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/init_sdl.c.s
-.PHONY : init_sdl.c.s
-
 libft/libft/ccprint.o: libft/libft/ccprint.c.o
 
 .PHONY : libft/libft/ccprint.o
@@ -2823,32 +2769,113 @@ libft/libft/xprint.c.s:
 	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/libft/libft/xprint.c.s
 .PHONY : libft/libft/xprint.c.s
 
-main.o: main.c.o
+source/data.o: source/data.c.o
 
-.PHONY : main.o
+.PHONY : source/data.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/main.c.o
-.PHONY : main.c.o
+source/data.c.o:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/data.c.o
+.PHONY : source/data.c.o
 
-main.i: main.c.i
+source/data.i: source/data.c.i
 
-.PHONY : main.i
+.PHONY : source/data.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/main.c.i
-.PHONY : main.c.i
+source/data.c.i:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/data.c.i
+.PHONY : source/data.c.i
 
-main.s: main.c.s
+source/data.s: source/data.c.s
 
-.PHONY : main.s
+.PHONY : source/data.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/main.c.s
-.PHONY : main.c.s
+source/data.c.s:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/data.c.s
+.PHONY : source/data.c.s
+
+source/init_sdl.o: source/init_sdl.c.o
+
+.PHONY : source/init_sdl.o
+
+# target to build an object file
+source/init_sdl.c.o:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/init_sdl.c.o
+.PHONY : source/init_sdl.c.o
+
+source/init_sdl.i: source/init_sdl.c.i
+
+.PHONY : source/init_sdl.i
+
+# target to preprocess a source file
+source/init_sdl.c.i:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/init_sdl.c.i
+.PHONY : source/init_sdl.c.i
+
+source/init_sdl.s: source/init_sdl.c.s
+
+.PHONY : source/init_sdl.s
+
+# target to generate assembly for a file
+source/init_sdl.c.s:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/init_sdl.c.s
+.PHONY : source/init_sdl.c.s
+
+source/main.o: source/main.c.o
+
+.PHONY : source/main.o
+
+# target to build an object file
+source/main.c.o:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/main.c.o
+.PHONY : source/main.c.o
+
+source/main.i: source/main.c.i
+
+.PHONY : source/main.i
+
+# target to preprocess a source file
+source/main.c.i:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/main.c.i
+.PHONY : source/main.c.i
+
+source/main.s: source/main.c.s
+
+.PHONY : source/main.s
+
+# target to generate assembly for a file
+source/main.c.s:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/main.c.s
+.PHONY : source/main.c.s
+
+source/main_info_block.o: source/main_info_block.c.o
+
+.PHONY : source/main_info_block.o
+
+# target to build an object file
+source/main_info_block.c.o:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/main_info_block.c.o
+.PHONY : source/main_info_block.c.o
+
+source/main_info_block.i: source/main_info_block.c.i
+
+.PHONY : source/main_info_block.i
+
+# target to preprocess a source file
+source/main_info_block.c.i:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/main_info_block.c.i
+.PHONY : source/main_info_block.c.i
+
+source/main_info_block.s: source/main_info_block.c.s
+
+.PHONY : source/main_info_block.s
+
+# target to generate assembly for a file
+source/main_info_block.c.s:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/main_info_block.c.s
+.PHONY : source/main_info_block.c.s
 
 # Help Target
 help:
@@ -2859,12 +2886,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... visu"
-	@echo "... data.o"
-	@echo "... data.i"
-	@echo "... data.s"
-	@echo "... init_sdl.o"
-	@echo "... init_sdl.i"
-	@echo "... init_sdl.s"
 	@echo "... libft/libft/ccprint.o"
 	@echo "... libft/libft/ccprint.i"
 	@echo "... libft/libft/ccprint.s"
@@ -3159,9 +3180,18 @@ help:
 	@echo "... libft/libft/xprint.o"
 	@echo "... libft/libft/xprint.i"
 	@echo "... libft/libft/xprint.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... source/data.o"
+	@echo "... source/data.i"
+	@echo "... source/data.s"
+	@echo "... source/init_sdl.o"
+	@echo "... source/init_sdl.i"
+	@echo "... source/init_sdl.s"
+	@echo "... source/main.o"
+	@echo "... source/main.i"
+	@echo "... source/main.s"
+	@echo "... source/main_info_block.o"
+	@echo "... source/main_info_block.i"
+	@echo "... source/main_info_block.s"
 .PHONY : help
 
 

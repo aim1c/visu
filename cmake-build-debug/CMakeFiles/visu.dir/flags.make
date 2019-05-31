@@ -6,5 +6,5 @@ C_FLAGS = -g   -Wall -Wextra -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/aleksandr/Documents/21/visu/./libft/libft -I/usr/local/Cellar/sdl2/2.0.9_1/include/SDL2 
+C_INCLUDES = -I/Users/aleksandr/Documents/21/visu/./libft/libft -I/usr/local/Cellar/sdl2/2.0.9_1/include/SDL2 -I/usr/local/include/SDL2 
 

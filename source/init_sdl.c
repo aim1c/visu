@@ -6,7 +6,7 @@
 /*   By: aim1c <aim1c@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 00:32:39 by aim1c             #+#    #+#             */
-/*   Updated: 2019/05/30 00:32:39 by aim1c            ###   ########.fr       */
+/*   Updated: 2019/05/31 04:12:51 by aim1c            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,16 @@ void	sdl_to_null(t_sdl **s)
 void	init_create(t_sdl **s)
 {
 	(*s)->win = SDL_CreateWindow("lem_in", SDL_WINDOWPOS_CENTERED,
-								 SDL_WINDOWPOS_CENTERED, WI, HI, SDL_WINDOW_SHOWN);
+								 SDL_WINDOWPOS_CENTERED, WI, HI,
+								 SDL_WINDOW_SHOWN);
 	if ((*s)->win == NULL)
 	{
 		ft_printf("Could not create window: %s\n", SDL_GetError());
 		exit(EXIT_SUCCESS);
 	}
 	(*s)->renderer = SDL_CreateRenderer((*s)->win, -1, 0);
-	SDL_SetRenderDrawColor((*s)->renderer, 0, 0, 0, 1);
+	(*s)->main_block.x = 1001;
+	(*s)->main_block.y = 0;
+	(*s)->main_block.w = 280;
+	(*s)->main_block.h = 720;
 }
