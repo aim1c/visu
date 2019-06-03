@@ -106,6 +106,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/aleksandr/Documents/21/visu/source/init_sdl.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/source/init_sdl.c.o"
   "/Users/aleksandr/Documents/21/visu/source/main.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/source/main.c.o"
   "/Users/aleksandr/Documents/21/visu/source/main_info_block.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/source/main_info_block.c.o"
+  "/Users/aleksandr/Documents/21/visu/source/strt.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/source/strt.c.o"
+  "/Users/aleksandr/Documents/21/visu/source/text.c" "/Users/aleksandr/Documents/21/visu/cmake-build-debug/CMakeFiles/visu.dir/source/text.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

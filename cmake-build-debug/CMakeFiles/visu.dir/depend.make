@@ -459,3 +459,41 @@ CMakeFiles/visu.dir/source/main_info_block.c.o: /usr/local/Cellar/sdl2/2.0.9_1/i
 CMakeFiles/visu.dir/source/main_info_block.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/begin_code.h
 CMakeFiles/visu.dir/source/main_info_block.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/close_code.h
 
+CMakeFiles/visu.dir/source/strt.c.o: .././libft/libft/ft_printf.h
+CMakeFiles/visu.dir/source/strt.c.o: .././libft/libft/libft.h
+CMakeFiles/visu.dir/source/strt.c.o: ../source/strt.c
+CMakeFiles/visu.dir/source/strt.c.o: ../source/visu.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_blendmode.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_config.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_endian.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_error.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_pixels.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_platform.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_rect.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_render.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_rwops.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_stdinc.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_surface.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_video.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/begin_code.h
+CMakeFiles/visu.dir/source/strt.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/close_code.h
+
+CMakeFiles/visu.dir/source/text.c.o: .././libft/libft/ft_printf.h
+CMakeFiles/visu.dir/source/text.c.o: .././libft/libft/libft.h
+CMakeFiles/visu.dir/source/text.c.o: ../source/text.c
+CMakeFiles/visu.dir/source/text.c.o: ../source/visu.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_blendmode.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_config.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_endian.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_error.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_pixels.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_platform.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_rect.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_render.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_rwops.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_stdinc.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_surface.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL_video.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/begin_code.h
+CMakeFiles/visu.dir/source/text.c.o: /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/close_code.h
+

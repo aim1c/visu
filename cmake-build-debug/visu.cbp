@@ -395,6 +395,12 @@
 		<Unit filename="/Users/aleksandr/Documents/21/visu/source/main_info_block.c">
 			<Option target="visu"/>
 		</Unit>
+		<Unit filename="/Users/aleksandr/Documents/21/visu/source/strt.c">
+			<Option target="visu"/>
+		</Unit>
+		<Unit filename="/Users/aleksandr/Documents/21/visu/source/text.c">
+			<Option target="visu"/>
+		</Unit>
 		<Unit filename="/Users/aleksandr/Documents/21/visu/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

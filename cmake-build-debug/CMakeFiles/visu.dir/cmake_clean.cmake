@@ -101,6 +101,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/visu.dir/source/init_sdl.c.o"
   "CMakeFiles/visu.dir/source/main.c.o"
   "CMakeFiles/visu.dir/source/main_info_block.c.o"
+  "CMakeFiles/visu.dir/source/strt.c.o"
+  "CMakeFiles/visu.dir/source/text.c.o"
   "../run/visu.pdb"
   "../run/visu"
 )

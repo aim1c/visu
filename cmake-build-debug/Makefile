@@ -2877,6 +2877,60 @@ source/main_info_block.c.s:
 	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/main_info_block.c.s
 .PHONY : source/main_info_block.c.s
 
+source/strt.o: source/strt.c.o
+
+.PHONY : source/strt.o
+
+# target to build an object file
+source/strt.c.o:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/strt.c.o
+.PHONY : source/strt.c.o
+
+source/strt.i: source/strt.c.i
+
+.PHONY : source/strt.i
+
+# target to preprocess a source file
+source/strt.c.i:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/strt.c.i
+.PHONY : source/strt.c.i
+
+source/strt.s: source/strt.c.s
+
+.PHONY : source/strt.s
+
+# target to generate assembly for a file
+source/strt.c.s:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/strt.c.s
+.PHONY : source/strt.c.s
+
+source/text.o: source/text.c.o
+
+.PHONY : source/text.o
+
+# target to build an object file
+source/text.c.o:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/text.c.o
+.PHONY : source/text.c.o
+
+source/text.i: source/text.c.i
+
+.PHONY : source/text.i
+
+# target to preprocess a source file
+source/text.c.i:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/text.c.i
+.PHONY : source/text.c.i
+
+source/text.s: source/text.c.s
+
+.PHONY : source/text.s
+
+# target to generate assembly for a file
+source/text.c.s:
+	$(MAKE) -f CMakeFiles/visu.dir/build.make CMakeFiles/visu.dir/source/text.c.s
+.PHONY : source/text.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3192,6 +3246,12 @@ help:
 	@echo "... source/main_info_block.o"
 	@echo "... source/main_info_block.i"
 	@echo "... source/main_info_block.s"
+	@echo "... source/strt.o"
+	@echo "... source/strt.i"
+	@echo "... source/strt.s"
+	@echo "... source/text.o"
+	@echo "... source/text.i"
+	@echo "... source/text.s"
 .PHONY : help
 
 

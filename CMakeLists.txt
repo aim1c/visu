@@ -3,7 +3,7 @@ project(visu C)      # project name
 
 set(CMAKE_C_STANDARD 99)
 #flags
-    add_compile_options(-Wall -Wextra)
+  #  add_compile_options(-Wall -Wextra)
 #apple frameworks
     find_library(OPEN_GL OpenGl)
     find_library(APP_KIT AppKit)
@@ -20,7 +20,7 @@ set(CMAKE_C_STANDARD 99)
     include_directories(${SDL2_INCLUDE_DIRS})
     include_directories(${SDL2_TTF_INCLUDE_DIR})
 #create binary
-    add_executable(visu ${LIBFT_SRCS} ${VISU_SRCS}) # all project-c-files here
+    add_executable(visu ${LIBFT_SRCS} ${VISU_SRCS} source/strt.c source/text.c) # all project-c-files here
 #mkdir run and move ./visu
     set_target_properties(visu PROPERTIES RUNTIME_OUTPUT_DIRECTORY "../run")
 #links
