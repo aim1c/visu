@@ -146,26 +146,58 @@ void printIt(t_steps *steps) {
 		cur_c = cur_c->next;
 	}
 	printf("%sLOG: - End printing connections \n%s", "\x1B[35m", "\x1B[0m");
-	printf("%sLOG: - Start print steps! \n%s", "\x1B[31m", "\x1B[0m");
-	while (steps->next) {
-		printf("%sStep: %zu%s\n", "\x1B[32m", steps->step ,"\x1B[0m");
-		t_antpos *now = steps->position_ants;
-		while (now->next) {
-				printf("\t ant: %s to: %s\n", now->name, now->to_room);
-				now = now->next;
+//	printf("%sLOG: - Start print steps! \n%s", "\x1B[31m", "\x1B[0m");
+//	while (steps->next) {
+//		printf("%sStep: %zu%s\n", "\x1B[32m", steps->step ,"\x1B[0m");
+//		t_antpos *now = steps->position_ants;
+//		while (now->next) {
+//				printf("\t ant: %s to: %s\n", now->name, now->to_room);
+//				now = now->next;
+//		}
+//		steps = steps->next;
+//	}
+//	printf("%sLOG: - End print steps! \n%s", "\x1B[31m", "\x1B[0m");
+}
+
+t_minmax *getLimits(t_steps *s) {
+	t_minmax *new = malloc(sizeof(t_minmax));
+	t_steps *cur = s;
+	
+	t_cord *rooms = s->position_rooms;
+
+	new->x_max = -2147483648;
+	new->y_max = -2147483648;
+	new->x_min = INT_MAX;
+	new->y_min = INT_MAX;
+	
+	while (rooms->next) {
+		if (new->x_min > rooms->x) {
+			new->x_min = rooms->x;
 		}
-		steps = steps->next;
+		if (new->x_max < rooms->x) {
+			new->x_max = rooms->x;
+		}
+		if (new->y_max < rooms->y) {
+			new->y_max = rooms->y;
+		}
+		if (new->y_min > rooms->y) {
+			new->y_min = rooms->y;
+		}
+		rooms = rooms->next;
 	}
-	printf("%sLOG: - End print steps! \n%s", "\x1B[31m", "\x1B[0m");
+	
+	return new;
 }
 
 int main(void) {
 	
 	t_steps *steps = readData();
 	
+	t_minmax *limits = getLimits(steps);
 	
+	printf("xMIN : %d yMIN : %d xMAX : %d yMAX : %d\n", limits->x_min, limits->y_min, limits->x_max, limits->y_max);
 	
-	printIt(steps);
+//	printIt(steps);
 	
 	
 }

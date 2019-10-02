@@ -17,6 +17,18 @@
 #define ANTS -2
 #define END_DATA 0
 
+#define INT_MAX 2147483647
+
+typedef struct	s_minmax {
+	
+	int y_min;
+	int y_max;
+	int x_min;
+	int x_max;
+	
+	
+}				t_minmax;
+
 typedef struct	s_cord {
 	double		x;
 	double		y;
@@ -47,6 +59,8 @@ typedef struct				s_steps {
 	struct		s_antpos	*position_ants;
 	struct		s_steps		*next;
 }							t_steps;
+
+
 
 t_cord			*initRoomsPosition();
 t_steps			*initSteps();
