@@ -52,8 +52,8 @@ t_cord *getPosRooms(t_list *main) {
 			cur = get(cur);
 			line = cur->content;
 			char **split = ft_strsplit(line, ' ');
-			cur_new->x = ft_atoi(split[1]);
-			cur_new->y = ft_atoi(split[2]);
+			cur_new->x = ft_atoi(split[1]) * 10;
+			cur_new->y = ft_atoi(split[2]) * 10;
 			cur_new->next = malloc(sizeof(t_cord));
 			cur_new = cur_new->next;
 			cur_new->next = 0;
@@ -64,8 +64,8 @@ t_cord *getPosRooms(t_list *main) {
 		}  else if (res == 3 && isRoom(line) == 0) {
 			char **split = ft_strsplit(line, ' ');
 			cur_new->name = ft_strdup(split[0]);
-			cur_new->x = ft_atoi(split[1]);
-			cur_new->y = ft_atoi(split[2]);
+			cur_new->x = ft_atoi(split[1]) * 10;
+			cur_new->y = ft_atoi(split[2]) * 10;
 			cur_new->next = malloc(sizeof(t_cord));
 			cur_new = cur_new->next;
 			cur_new->next = 0;

@@ -57,6 +57,7 @@ typedef struct				s_steps {
 	struct		s_cord		*position_rooms;
 	struct		s_connect	*room_connections;
 	struct		s_antpos	*position_ants;
+	struct		s_minmax	*limits;
 	struct		s_steps		*next;
 }							t_steps;
 
@@ -66,5 +67,6 @@ t_cord			*initRoomsPosition();
 t_steps			*initSteps();
 
 t_cord *getPosRooms(t_list *main);
+int keydown(int keycode, void *param);
 
 #endif /* visu_h */

@@ -134,6 +134,7 @@ void printIt(t_steps *steps) {
 	printf("%zu\n", steps->count_ants);
 	t_cord *cur = steps->position_rooms;
 	t_connect *cur_c = steps->room_connections;
+	t_minmax *limits = steps->limits;
 	printf("%sLOG: - Start printing rooms\n%s", "\x1B[32m", "\x1B[0m");
 	while (cur->next) {
 		printf("%s %.0f %.0f\n", cur->name, cur->x, cur->y);
@@ -146,17 +147,21 @@ void printIt(t_steps *steps) {
 		cur_c = cur_c->next;
 	}
 	printf("%sLOG: - End printing connections \n%s", "\x1B[35m", "\x1B[0m");
-//	printf("%sLOG: - Start print steps! \n%s", "\x1B[31m", "\x1B[0m");
-//	while (steps->next) {
-//		printf("%sStep: %zu%s\n", "\x1B[32m", steps->step ,"\x1B[0m");
-//		t_antpos *now = steps->position_ants;
-//		while (now->next) {
-//				printf("\t ant: %s to: %s\n", now->name, now->to_room);
-//				now = now->next;
-//		}
-//		steps = steps->next;
-//	}
-//	printf("%sLOG: - End print steps! \n%s", "\x1B[31m", "\x1B[0m");
+	printf("%sLOG: - Start print steps! \n%s", "\x1B[31m", "\x1B[0m");
+	while (steps->next) {
+		printf("%sStep: %zu%s\n", "\x1B[32m", steps->step ,"\x1B[0m");
+		t_antpos *now = steps->position_ants;
+		while (now->next) {
+				printf("\t ant: %s to: %s\n", now->name, now->to_room);
+				now = now->next;
+		}
+		steps = steps->next;
+	}
+	printf("%sLOG: - End print steps! \n%s", "\x1B[31m", "\x1B[0m");
+	
+	printf("%sLOG: - Start printing limits\n%s", "\x1B[32m", "\x1B[0m");
+	printf("minimum X = %d maximum X = %d\nminimum Y = %d maximum Y = %d\n", limits->x_min, limits->x_max, limits->y_min, limits->y_max);
+	printf("%sLOG: - End printing limits\n%s", "\x1B[32m", "\x1B[0m");
 }
 
 t_minmax *getLimits(t_steps *s) {
@@ -189,15 +194,25 @@ t_minmax *getLimits(t_steps *s) {
 	return new;
 }
 
+void makeVis(t_steps *steps) {
+	t_minmax *limits = steps->limits;
+	
+	void *mlx = mlx_init();
+	void *win = mlx_new_window(mlx, 1280, 720, "lemin");
+	
+	
+	mlx_hook(win, 3, 0, keydown, 0);
+	mlx_loop(mlx);
+	
+}
+
 int main(void) {
 	
 	t_steps *steps = readData();
+	steps->limits = getLimits(steps);
 	
-	t_minmax *limits = getLimits(steps);
-	
-	printf("xMIN : %d yMIN : %d xMAX : %d yMAX : %d\n", limits->x_min, limits->y_min, limits->x_max, limits->y_max);
-	
-//	printIt(steps);
+	makeVis(steps);
+	printIt(steps);
 	
 	
 }
