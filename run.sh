@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./lem_in < file.txt | ./visualizer-eoagkmirzmhaqqblffsjjajwdziw/Build/Products/Debug/visualizer
+./lem_in < file.txt | ./visualizer-hgldrdodieffbehjdskgefklekre/Build/Products/Debug/visualizer

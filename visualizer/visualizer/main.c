@@ -36,9 +36,10 @@ t_connect *getConnections(t_list *en) {
 	head->next = 0;
 	t_connect *cur = head;
 	
+	int i = 0;
 	while (main->next) {
 		char *line = main->content;
-		if (ft_wordcount(line, '-') == 2 && line[0] != 'L') {
+		if (line != 0 && ft_wordcount(line, '-') == 2 && line[0] != 'L') {
 			char **split = ft_strsplit(line, '-');
 			cur->from = ft_strdup(split[0]);
 			cur->to = ft_strdup(split[1]);
@@ -90,15 +91,15 @@ t_steps *handleData(t_list *main) {
 	t_steps *c = new;
 	t_list	*cur = main;
 	size_t step = 1;
-	
 	c->count_ants = getCountSize(main);
 	c->position_rooms = getPosRooms(main);
 	c->room_connections = getConnections(main);
-	
+
+
 	while (cur->next) {
 		char *line = cur->content;
-		
-		if (line[0] == 'L') {
+
+		if (line && line[0] == 'L') {
 			c->step = step;
 			c->position_ants = getAntsDislocation(line);
 			c->next = initSteps();
@@ -125,6 +126,7 @@ t_steps *readData() {
 		cur->content = (void *)ft_strdup(line);
 		cur->next = malloc(sizeof(t_list));
 		cur = cur->next;
+		cur->next = 0;
 	}
 	t_steps *steps = handleData(head);
 	return steps;
@@ -165,16 +167,14 @@ void printIt(t_steps *steps) {
 }
 
 t_minmax *getLimits(t_steps *s) {
+
 	t_minmax *new = malloc(sizeof(t_minmax));
 	t_steps *cur = s;
-	
 	t_cord *rooms = s->position_rooms;
-
 	new->x_max = -2147483648;
 	new->y_max = -2147483648;
 	new->x_min = INT_MAX;
 	new->y_min = INT_MAX;
-	
 	while (rooms->next) {
 		if (new->x_min > rooms->x) {
 			new->x_min = rooms->x;
@@ -194,15 +194,70 @@ t_minmax *getLimits(t_steps *s) {
 	return new;
 }
 
+void pixelPutRoom(int x, int y, char *addr, int sizeLine, int bpp) {
+	int i = (x * bpp / 8) + (y * sizeLine);
+	
+	addr[i] = 255;
+	addr[++i] = 0;
+	addr[++i] = 0;
+	addr[++i] = 0;
+	
+	 i = (x * bpp / 8) + ((y + 1) * sizeLine);
+	
+	addr[i] = 255;
+	addr[++i] = 0;
+	addr[++i] = 0;
+	addr[++i] = 0;
+}
+
+void makeSquare(t_visual *vis, t_cord *room) {
+	t_cord first;
+	first.x = room->x;
+	first.y = room->y;
+	t_cord second;
+	second.x = room->x + 10;
+	second.y = room->y;
+	t_cord third;
+	third.x = second.x;
+	third.y = room->y + 10;
+	t_cord forth;
+	forth.x = room->x;
+	forth.y = room->y + 10;
+	
+	printf("hi\n");
+	lineBr(first, second, vis);
+	lineBr(second, third, vis);
+	lineBr(third, forth, vis);
+	lineBr(forth, first, vis);
+	printf("exit\n");
+}
+
 void makeVis(t_steps *steps) {
 	t_minmax *limits = steps->limits;
+	t_visual *graph = steps->graphic;
+	t_cord *cur = steps->position_rooms;
+	printf("%.0f %.0f\n", cur->x, cur->y);
 	
-	void *mlx = mlx_init();
-	void *win = mlx_new_window(mlx, 1280, 720, "lemin");
+	graph->mlx = mlx_init();
+	graph->win = mlx_new_window(graph->mlx, 1280, 720, "lemin");
 	
+	graph->width = limits->x_max + 100;
+	graph->height = limits->y_max + 100;
+	graph->bpp = 8 * 4;
+	graph->size_of_line = graph->width;
+	graph->endian = 0;
+	graph->img = mlx_new_image(graph->mlx, 1280, 720);
+	graph->addr = mlx_get_data_addr(graph->img, &graph->bpp, &graph->size_of_line, &graph->endian);
+
+	while (cur->next) {
+	//	printf("hi\n");
+		makeSquare(graph, cur);
+		cur = cur->next;
+	}
 	
-	mlx_hook(win, 3, 0, keydown, 0);
-	mlx_loop(mlx);
+	mlx_put_image_to_window(graph->mlx, graph->win, graph->img, graph->width / 2, graph->height / 2);
+	mlx_hook(graph->win, 3, 0, keydown, 0);
+	mlx_loop(graph->mlx);
 	
 }
 

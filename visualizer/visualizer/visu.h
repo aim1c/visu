@@ -51,6 +51,19 @@ typedef struct	s_connect {
 	struct		s_connect *next;
 }				t_connect;
 
+typedef struct	s_visuality {
+	double		zoom;
+	void		*mlx;
+	void		*win;
+	void		*img;
+	char		*addr;
+	int			bpp;
+	int			size_of_line;
+	int			endian;
+	int			width;
+	int			height;
+}				t_visual;
+
 typedef struct				s_steps {
 	size_t					step;
 	size_t					count_ants;
@@ -58,11 +71,12 @@ typedef struct				s_steps {
 	struct		s_connect	*room_connections;
 	struct		s_antpos	*position_ants;
 	struct		s_minmax	*limits;
+	struct		s_visuality *graphic;
 	struct		s_steps		*next;
 }							t_steps;
 
 
-
+void lineBr(t_cord xy0, t_cord xy1, t_visual *img);
 t_cord			*initRoomsPosition();
 t_steps			*initSteps();
 

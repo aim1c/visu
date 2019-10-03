@@ -17,6 +17,7 @@ t_steps			*initSteps() {
 	new->position_ants = 0;
 	new->position_rooms = 0;
 	new->step = 0;
+	new->graphic = malloc(sizeof(t_visual));
 	
 	return new;
 }

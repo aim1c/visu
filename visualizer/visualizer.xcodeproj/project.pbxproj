@@ -13,6 +13,7 @@
 		4B8407012343C47A009321D4 /* roomsHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B8407002343C47A009321D4 /* roomsHandler.c */; };
 		4BA6CCC6234617B400BB3AAC /* keyscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA6CCC4234617B400BB3AAC /* keyscode.c */; };
 		4BE05698234247610082DE74 /* initStructs.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BE05697234247610082DE74 /* initStructs.c */; };
+		9C3A02BF2346798B003A4782 /* breh.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A02BE2346798B003A4782 /* breh.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,7 @@
 		4BA6CCC4234617B400BB3AAC /* keyscode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = keyscode.c; sourceTree = "<group>"; };
 		4BE05696234247310082DE74 /* visu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visu.h; sourceTree = "<group>"; };
 		4BE05697234247610082DE74 /* initStructs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = initStructs.c; sourceTree = "<group>"; };
+		9C3A02BE2346798B003A4782 /* breh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = breh.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				4BE05697234247610082DE74 /* initStructs.c */,
 				4B8407002343C47A009321D4 /* roomsHandler.c */,
 				4BA6CCC4234617B400BB3AAC /* keyscode.c */,
+				9C3A02BE2346798B003A4782 /* breh.c */,
 			);
 			path = visualizer;
 			sourceTree = "<group>";
@@ -119,7 +122,7 @@
 		4B2F2060233F99F700DF3CF5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Frost atronach Snow bear";
 				TargetAttributes = {
 					4B2F2067233F99F700DF3CF5 = {
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3A02BF2346798B003A4782 /* breh.c in Sources */,
 				4B8407012343C47A009321D4 /* roomsHandler.c in Sources */,
 				4BE05698234247610082DE74 /* initStructs.c in Sources */,
 				4BA6CCC6234617B400BB3AAC /* keyscode.c in Sources */,
@@ -174,6 +178,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -181,6 +186,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -229,6 +235,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -236,6 +243,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

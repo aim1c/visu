@@ -72,5 +72,6 @@ t_cord *getPosRooms(t_list *main) {
 		}
 		cur = cur->next;
 	}
+	printf("getPosRooms\n");
 	return new;
 }
